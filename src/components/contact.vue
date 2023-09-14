@@ -29,3 +29,9 @@
     </li>
   </ul>
 </template>
+
+<style scoped>
+    a:hover {
+        color: #C68F77;
+    }
+</style>

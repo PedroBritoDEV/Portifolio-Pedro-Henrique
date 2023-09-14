@@ -7,7 +7,15 @@
 <template> 
   <div class="h-screen">
     <HeaderComponent class="h-10vh"/>
-    <RouterView class="h-90vh"/>
+    <router-view class="h-90vh" v-slot="{ Component }">
+      <transition 
+        enter-active-class="animate__animated animate__fadeInRightBig"
+        leave-active-class="animate__animated animate__fadeOutLeftBig"
+        mode="out-in"
+      >
+        <component :is="Component" />
+      </transition>
+    </router-view>
   </div>
 
       

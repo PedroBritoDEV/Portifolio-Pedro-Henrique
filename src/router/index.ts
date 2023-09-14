@@ -6,17 +6,20 @@ const router = createRouter({
     {
       path: '/',
       name: 'sobre',
-      component: () => import('../views/SobreView.vue')
+      component: () => import('../views/SobreView.vue'),
+      meta: { transition: 'slide-left' },
     },
     {
       path: '/projetos',
       name: 'projetos',
-      component: () => import('../views/ProjetosView.vue')
+      component: () => import('../views/ProjetosView.vue'),
+      meta: { transition: 'slide-left' },
     },
     {
       path: '/tecnologias',
       name: 'tecnologias',
-      component: () => import('../views/TecnologiasView.vue')
+      component: () => import('../views/TecnologiasView.vue'),
+      meta: { transition: 'slide-left' },
     }
   ]
 })

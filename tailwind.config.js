@@ -9,15 +9,18 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        josefin : ['Josefin Sans', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif']
       },
       height: {
         '10vh' : '10vh',
         '90vh' : '90vh',
-        
-
-
-
+        '750px' : '750px'
+      },
+      width: {
+        '84' : '28rem',
+      },
+      borderColor : {
+        'gold' : '#C68F77'
       }
     },
   },
