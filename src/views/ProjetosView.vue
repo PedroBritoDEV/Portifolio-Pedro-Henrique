@@ -1,26 +1,14 @@
-<script lang="ts">
+<script setup lang="ts">
   import '@splidejs/splide/dist/css/themes/splide-default.min.css';
-  import { Splide, SplideSlide } from '@splidejs/vue-splide';
-  export default {
-  components: {
-    Splide,
-    SplideSlide,
-  },
-}
+  import { Splide, SplideSlide } from "@splidejs/vue-splide";
+
 </script>
 
 <template>
   <main id="projetos">
     <div class="text-white projetos-content max-w-screen-xl m-auto h-full">
       <h2 class="text-center font-bold text-2xl mt-0">Confira Meus Projetos</h2>
-      
-      <section class="transition-transform relative " id="projetos" >
-        <!-- <span id="left-btn" class="material-symbols-outlined cursor-pointer absolute flex content-center items-center font-bold text-6xl rounded-full">
-          chevron_left
-        </span>
-        <span id="right-btn" class="material-symbols-outlined cursor-pointer absolute flex content-center items-center font-bold text-6xl rounded-full">
-          chevron_right
-        </span> -->
+      <section class="transition-transform relative " id="projetos" >                   
         <Splide>
           <SplideSlide>
             <div id="projetos-page01" class="grid h-750px ">
@@ -118,7 +106,7 @@
             
             <a id="base-apparel-coming-soon" href="https://pedrobritodev.github.io/base-apparel-coming-soon-master-challenge-12/" target="_blank">
               <div class="m-4 mt-0 bg-gray-700 border-gold border-2 p-2 flex flex-col justify-center items-center rounded">
-                <h3 class="text-center"></h3>
+                <h3 class="text-center">Base Apparel Coming Sonn</h3>
                 <picture class="w-64 overflow-hidden">
                   <img src="../assets/img/projetos/base-apparel-coming-soon.jpg" alt="" class="project-img w-full object-cover">
                 </picture>

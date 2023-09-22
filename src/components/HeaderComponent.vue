@@ -3,8 +3,8 @@
 </script>
 
 <template>
-    <header>
-        <div id="header-content" class="max-w-screen-xl m-auto h-full">
+    <header class="hidden md:block">
+        <div id="header-content" class="max-w-screen-xl m-auto h-full ">
             <div class="w-16 h-full flex items-center justify-between flex-wrap w-full">
                 <img class="w-16 cursor-pointer" src="../assets/img/logo-ph.png" alt="logo-ph ">
                 <NavLinks/>

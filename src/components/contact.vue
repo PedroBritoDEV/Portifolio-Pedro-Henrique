@@ -17,13 +17,13 @@
     </li>
     <li class="my-1 ">
         <a class="flex items-center h-8" href="mailto:contapdr10@gmail.com" target="_blank">
-            <i class="fa-regular fa-envelope"></i>
+            <i class="fa-thin fa-envelope"></i>
             <span class="ml-3">contapdr10@gmail.com</span>
         </a>
     </li>
     <li class="my-1 ">
         <a class="flex items-center h-8" href="tel:+5598984185316" target="_blank">
-            <i class="fa-solid fa-phone"></i>
+            <i class="fa-thin fa-phone"></i>
             <span class="ml-3">+55 98 98418-5316</span>
         </a>
     </li>
