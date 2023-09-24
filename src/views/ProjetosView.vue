@@ -72,7 +72,7 @@
               <div class="m-4 mt-0 bg-gray-700 border-gold border-2 p-2 flex flex-col justify-center items-center rounded">
                 <h3 class="text-center">FAQ According</h3>
                 <picture class="w-64 overflow-hidden flex">
-                  <img src="../assets/img/projetos/faq according.jpg" alt="Foto Faq According" class="project-img w-full object-cover">
+                  <img src="../assets/img/projetos/faq-according.jpg" alt="Foto Faq According" class="project-img w-full object-cover">
                 </picture>
               </div>
             </a>

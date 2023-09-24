@@ -1,9 +1,9 @@
 
 <script lang="ts">
-import contact from '@/components/contact.vue';
+import contact from '../components/contact.vue';
 import myPhoto from '../components/myphotoComponent.vue'
-export default {
 
+export default {
   data() {
     return {
       text: "ou o Pedro Henrique",
@@ -40,6 +40,7 @@ export default {
   }
 };
 
+
   
 </script>
 
@@ -48,7 +49,7 @@ export default {
   <main>
     <div class="main-content flex items-center justify-between max-w-screen-xl m-auto h-full ">
       <div class="text-white text-informations max-w-2xl">
-        <h1 id="welcomeText" class="white text-5xl font-bold leading-relaxed">Bem Vindo! <br> <span class="type-aniamte">S{{ ShowedText }}</span></h1>
+        <h1 id="welcomeText" class="white text-5xl md:text-5xl font-bold leading-relaxed my-5 md:my-auto leading-10 ">Bem Vindo! <br> <span class="type-aniamte text-3xl">S{{ ShowedText }}</span></h1>
         <myPhoto class="md:hidden w-64 "/>
         <span id="stack" class="text-lg white text-center flex flex-row mb-10">Programador Front-end</span>
         <p class="white text-xl leading-snug">Cursando o segundo périodo de Análise e Desenvolvimento de Sistemas e atuando como programador a mais de 1 ano. Aqui você encontrará uma coleção de projetos que refletem minha paixão pela criação de soluções inovadoras e minha dedicação ao mundo da programação.</p>
