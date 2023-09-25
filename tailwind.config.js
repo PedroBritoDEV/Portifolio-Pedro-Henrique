@@ -20,6 +20,7 @@ module.exports = {
       },
       width: {
         '84' : '28rem',
+        '30%' : '30%'
       },
       borderColor : {
         'gold' : '#C68F77'

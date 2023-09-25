@@ -6,7 +6,7 @@
 </script>
 
 <template> 
-  <div class="md:h-screen h-auto px-5 md:px-0">
+  <div class="md:h-screen h-auto px-5 mt-4 md:px-0">
     <HeaderComponent class="md:h-10vh h-auto" />
     <router-view class="md:h-90vh md:mb-0 mb-10 h-auto " v-slot="{ Component }">
       <transition 
@@ -17,7 +17,7 @@
         <component :is="Component" />
       </transition>
     </router-view>
-    <footerMobileComponent class="w-full"/>
+    <footerMobileComponent class="w-full fixed"/>
   </div>
 
       

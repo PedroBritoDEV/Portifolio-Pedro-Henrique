@@ -5,13 +5,13 @@
 <template>
     <nav>
         <ul class="flex">
-            <li id="sobre-mim" class="text-slate-200 text-center font-black text-xl mx-4">
-                <router-link class="link-nav   p-4 flex items-center" to="/"><i class="fa-thin fa-user mr-0 md:mr-4"></i> Sobre Mim </router-link>
+            <li id="sobre-mim" class="text-slate-200 text-center font-black text-base sm:text-xl mx-3">
+                <router-link class="link-nav p-4 flex items-center" to="/"><i class="fa-thin fa-user mr-0 md:mr-4"></i> Sobre Mim </router-link>
             </li>
-            <li id="Projetos" class=" text-slate-200 font-black text-xl mx-4">
+            <li id="Projetos" class=" text-slate-200 font-black text-base sm:text-xl mx-3">
                 <router-link class="link-nav p-4 flex items-center" to="/projetos"><i class="fa-thin fa-newspaper mr-0  md:mr-4"></i> Projetos</router-link>
             </li>
-            <li id="tecnologias" class="text-slate-200 font-black text-xl mx-4">
+            <li id="tecnologias" class="text-slate-200 font-black text-base sm:text-xl mx-3">
                 <router-link class="link-nav p-4 flex items-center" to="/tecnologias" ><i class="fa-thin fa-code mr-0 md:mr-4"></i> Tecnologias</router-link>
             </li>
         </ul>

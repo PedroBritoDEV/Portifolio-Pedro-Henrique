@@ -2,7 +2,7 @@
   import '@splidejs/splide/dist/css/themes/splide-default.min.css';
   import { Splide, SplideSlide, Options } from "@splidejs/vue-splide";
 
-  const options: Options = {
+  const optionsFrontEnd: Options = {
         type: 'loop',
         perPage: 5,   
         perMove: 1,
@@ -10,30 +10,47 @@
         interval: 1500,
         arrows: false,
         pagination: 0,
-    };
+        width: null,
+        
+  };
+  const optionsFerramentas: Options = {
+        type: 'loop',
+        perPage: 5,   
+        perMove: 1,
+        autoplay: true, 
+        interval: 1500,
+        arrows: false,
+        pagination: 0,
+        width: null,
+
+  };
+  const larguraDaTela : number = window.innerWidth;
+
+  if (larguraDaTela <= 768) {
+    optionsFrontEnd.perPage = 3;
+    optionsFerramentas.perPage = 3;
+    optionsFrontEnd.width = '100%';
+    optionsFerramentas.width = '100%';
+  }
+
+  
+
 </script>
 
 <template>
-  <main>
+  <main class="mb-20">
     <div class="tecnologias-content text-white projetos-content max-w-screen-xl m-auto h-full">
       <h1 class="text-3xl text-white  font-bold">TECNOLOGIAS</h1>
       <section id="front-end max-w-full block">
         <h4 class="text-2xl font-medium">Front-End</h4>
         <div id="front-end-content" class="flex  py-10" >
-          <Splide :options="options">
-            
+          <Splide :options="optionsFrontEnd">      
             <SplideSlide><img class=""  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" /></SplideSlide>
-
-            <SplideSlide><img class="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" /></SplideSlide>
-          
-            <SplideSlide><img class=" " src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" /></SplideSlide>
-        
-            <SplideSlide><img class=" " src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" /></SplideSlide>
-          
+            <SplideSlide><img class="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" /></SplideSlide>    
+            <SplideSlide><img class=" " src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" /></SplideSlide>    
+            <SplideSlide><img class=" " src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" /></SplideSlide>       
             <SplideSlide><img class="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg" /></SplideSlide>
-
-            <SplideSlide><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" /></SplideSlide>
-          
+            <SplideSlide><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" /></SplideSlide>      
             <SplideSlide><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" /></SplideSlide>
             <SplideSlide><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" /></SplideSlide>
           
@@ -66,17 +83,19 @@
       <section id="ferramentas">
         <h4 class="text-2xl font-medium" >Ferramentas</h4>
         <div id="ferramentas-content" class="flex">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />       
-          
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" />
-          
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" />
-          
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" />
-          
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gimp/gimp-original-wordmark.svg" />
-
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+          <Splide :options="optionsFerramentas">
+            <SplideSlide><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />       </SplideSlide>
+            
+            <SplideSlide><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></SplideSlide>
+            
+            <SplideSlide><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" /></SplideSlide>
+            
+            <SplideSlide><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" /></SplideSlide>
+            
+            <SplideSlide><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gimp/gimp-original-wordmark.svg" /></SplideSlide>
+  
+            <SplideSlide><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" /></SplideSlide>
+          </Splide>
           
           
           
@@ -96,5 +115,8 @@
   }
   section {
     margin: 30px 0;
+  }
+  ul, #splide01-list, #splide02-list  {
+    width: 300px!important;
   }
 </style>
