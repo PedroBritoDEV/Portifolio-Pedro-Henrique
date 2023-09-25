@@ -3,6 +3,7 @@
 import contact from '../components/contact.vue';
 import myPhoto from '../components/myphotoComponent.vue'
 
+
 export default {
   data() {
     return {
