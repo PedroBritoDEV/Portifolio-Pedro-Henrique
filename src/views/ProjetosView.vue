@@ -1,11 +1,10 @@
 <script setup lang="ts">
   import '@splidejs/splide/dist/css/themes/splide-default.min.css';
   import { Splide, SplideSlide } from "@splidejs/vue-splide";
-
 </script>
 
 <template>
-  <main id="projetos">
+  <main id="projetos" class="mb-20">
     <div class="text-white projetos-content max-w-screen-xl m-auto h-full">
       <h2 class="text-center font-bold text-2xl my-3">Confira Meus Projetos</h2>
       <section class="transition-transform relative " id="projetos" >                   
@@ -15,7 +14,7 @@
   
               <a id="sunnyside-agency" href="https://pedrobritodev.github.io/sunnyside-agency-landing-page-main-challenge-5/" target="_blank">
                 <div class="m-2 md:m-4 bg-gray-700  border-gold border-2 p-2 flex flex-col justify-center items-center  rounded">
-                  <h3 class="text-center">SUNNYSIDE</h3>
+                  <h3 class="text-center">Sunnyside</h3>
                   <picture class="w-34 md:w-56  overflow-hidden">
                     <img class="project-img w-full h-full object-cover" src="../assets/img/projetos/sunny-agency.jpg" alt="projeto sunny agency">
                   </picture>
@@ -24,7 +23,7 @@
   
               <a id="clipboard" href="https://pedrobritodev.github.io/clipboard-landing-page-master-challenge23/" target="_blank">
                 <div class="m-2 md:m-4 bg-gray-700 border-gold border-2 p-2 flex flex-col justify-center items-center  rounded">
-                  <h3 class="text-center">CLIPBOARD</h3>
+                  <h3 class="text-center">Clipboard</h3>
                   <picture class="w-34 md:w-56  overflow-hidden">
                     <img class="project-img w-full h-full object-cover" src="../assets/img/projetos/clipboard.jpg" alt="">
                   </picture>
@@ -33,7 +32,7 @@
   
               <a id="blogr" href="https://pedrobritodev.github.io/blogr-landing-page-main-challenge-16/ " target="_blank">
                 <div class="m-2 md:m-4 bg-gray-700 border-gold border-2 p-2 flex flex-col justify-center items-center  rounded">
-                  <h3 class="text-center">BLOGR</h3>
+                  <h3 class="text-center">Blogr</h3>
                   <picture class="w-34 md:w-56  overflow-hidden">
                     <img class="project-img w-full h-full object-cover" src="../assets/img/projetos/blogr.jpg" alt="">
                   </picture>
@@ -42,7 +41,7 @@
   
               <a id="fylo" href="https://pedrobritodev.github.io/fylo-landing-page-with-two-column-layout-master-challenge-19/" target="_blank">
                 <div class="m-2 md:m-4 my-10 bg-gray-700 border-gold border-2 p-2 flex flex-col items-center rounded">
-                  <h3 class="text-center">FYLO</h3>
+                  <h3 class="text-center">Fylo</h3>
                   <picture class="w-34 md:w-56  overflow-hidden">
                     <img class="project-img w-full h-full object-cover" src="../assets/img/projetos/fylo.jpg" alt="">
                   </picture>
@@ -51,16 +50,12 @@
   
               <a  id="intro-section" href="https://pedrobritodev.github.io/intro-section-with-dropdown-navigation-main-challenge-18/" target="_blank">
                 <div class="m-2 md:mx-4 bg-gray-700 border-gold border-2 p-2 flex flex-col justify-center items-center  rounded">
-                  <h3 class="text-center">INTRO SECTION</h3>
+                  <h3 class="text-center">Intro Section</h3>
                   <picture class="w-auto md:w-56  overflow-hidden">
                     <img class="project-img w-full h-full object-cover" src="../assets/img/projetos/intro-section.jpg" alt="">
                   </picture>
                 </div>
               </a>
-  
-              
-  
-              
               
             </div><!--projetos-page01-->
           </SplideSlide>
@@ -165,6 +160,7 @@
                 </picture>
               </div>
             </a>
+
             <a id="huddle" href="https://pedrobritodev.github.io/huddle-landing-page-with-single-introductory-section-master-challenge-11/" target="_blank">
               <div class="m-4 bg-gray-700 border-gold border-2 p-2 flex flex-col justify-center items-center  rounded">
                 <h3 class="text-center">Huddle</h3>
@@ -173,6 +169,7 @@
                 </picture>
               </div>
             </a>
+
             <a id="interactive-rating" href="https://pedrobritodev.github.io/interactive-rating-component-main-challenge-8/" target="_blank">
               <div class="m-4 bg-gray-700 border-gold border-2 p-2 flex flex-col justify-center items-center  rounded">
                 <h3 class="text-center">Interactive Rating</h3>
@@ -181,11 +178,10 @@
                 </picture>
               </div>
             </a>
+
             </div>
         </SplideSlide>
-
         </Splide>
-
       </section>
     </div>
   </main>

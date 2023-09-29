@@ -4,11 +4,11 @@
 <template>
     <div class="contact-section">
 
-        <h3 class="font-bold text-xl mt-10 mb-3">ENTRE EM CONTATO COMIGO</h3>
+        <h3 class="font-bold text-xl mt-4 md:mt-10 mb-3">ENTRE EM CONTATO COMIGO</h3>
         <ul class="flex flex-col">
           <li class="my-1">
               <a class="flex items-center h-8" href="https://www.linkedin.com/in/pedro-henrique-649776209/" target="_blank">
-                  <i class="fa-brands fa-linkedin-in"></i>
+                  <i class="fa-brands fa-linkedin"></i>
                   <span class="ml-3">Pedro Henrique</span>
               </a>
           </li>

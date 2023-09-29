@@ -24,6 +24,9 @@ module.exports = {
       },
       borderColor : {
         'gold' : '#C68F77'
+      },
+      minHeight: {
+        '80vh': '80vh',
       }
     },
   },

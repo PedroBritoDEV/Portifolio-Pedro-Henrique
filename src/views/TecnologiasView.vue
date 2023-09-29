@@ -9,7 +9,7 @@
         autoplay: true, 
         interval: 1500,
         arrows: false,
-        pagination: 0,
+        pagination: false,
         width: null,
         
   };
@@ -20,7 +20,7 @@
         autoplay: true, 
         interval: 1500,
         arrows: false,
-        pagination: 0,
+        pagination: false,
         width: null,
 
   };
@@ -38,12 +38,12 @@
 </script>
 
 <template>
-  <main class="mb-20">
-    <div class="tecnologias-content text-white projetos-content max-w-screen-xl m-auto h-full">
-      <h1 class="text-3xl text-white  font-bold">TECNOLOGIAS</h1>
+  <main class="mb-20 min-h-80vh md:min-h-auto">
+    <div class="tecnologias-content text-white projetos-content max-w-screen-xl m-auto ">
+      <h1 class="text-3xl text-white font-bold">TECNOLOGIAS</h1>
       <section id="front-end max-w-full block">
         <h4 class="text-2xl font-medium">Front-End</h4>
-        <div id="front-end-content" class="flex  py-10" >
+        <div id="front-end-content" class="flex my-4" >
           <Splide :options="optionsFrontEnd">      
             <SplideSlide><img class=""  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" /></SplideSlide>
             <SplideSlide><img class="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" /></SplideSlide>    
@@ -61,7 +61,7 @@
                 
         </div>
       </section>
-      <section id="back-end">
+      <section id="back-end" class="my-4">
         <h4 class="text-2xl font-medium">Back-End</h4>
         <div id="back-end-content" class="flex">
           
@@ -70,7 +70,7 @@
           <img class="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-plain-wordmark.svg" /> 
         </div>
       </section>
-      <section id="banco-de-dados">
+      <section id="banco-de-dados" class="my-4">
         <h4 class="text-2xl font-medium">Banco de Dados</h4>
         <div id="banco-de-dados-content" class="flex">
           <img class=" bg-white" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg" />
@@ -80,11 +80,11 @@
         </div>
       </section>
 
-      <section id="ferramentas">
+      <section id="ferramentas" class="my-4">
         <h4 class="text-2xl font-medium" >Ferramentas</h4>
         <div id="ferramentas-content" class="flex">
           <Splide :options="optionsFerramentas">
-            <SplideSlide><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />       </SplideSlide>
+            <SplideSlide><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" /></SplideSlide>
             
             <SplideSlide><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /></SplideSlide>
             
@@ -96,9 +96,7 @@
   
             <SplideSlide><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" /></SplideSlide>
           </Splide>
-          
-          
-          
+ 
         </div>
       </section>
     </div>
@@ -116,7 +114,8 @@
   section {
     margin: 30px 0;
   }
-  ul, #splide01-list, #splide02-list  {
-    width: 300px!important;
+
+  .splide__pagination{
+    top: 90px!important;
   }
 </style>
